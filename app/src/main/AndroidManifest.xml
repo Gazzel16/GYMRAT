@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GYMRAT"
+        tools:targetApi="31">
+        <activity
+            android:name=".BeginnerChestWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginOrCreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MembershipSessionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MembershipTermsAndConditionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GymDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HardBicepsWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntermediateBicepsWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BeginnerBicepsWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BicepExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HardTricepsWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntermediateTricepsWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BeginnerTricepsWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TricepsExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HardLegsWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntermediateLegsWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BeginnerLegsWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LegsExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HardShoulderWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntermediateShoulderWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BeginnerShoulderWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShoulderExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HardBackWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntermediateBackWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BeginnerBackExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BackExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HardcoreChestWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntermediateChestWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChestWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrainingProgramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GymLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

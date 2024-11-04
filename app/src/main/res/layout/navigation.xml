@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000"
+    tools:context=".NavigationActivity">
+
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Wrapping CardViews in LinearLayout for proper scrolling -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="319dp"
+                android:layout_height="192dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/gymrat" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/descriptionCardView"
+                android:layout_width="329dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Description"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/descriptionImageView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/description" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gymDetailsCardView"
+                android:layout_width="329dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/gymDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Gym Details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/gymDetailsImageView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/imgdumbell"
+                    app:tint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileDetailsCardView"
+                android:layout_width="329dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/profileDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Profile Details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/profileDetailsImageView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/account" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/trainingProgramCardView"
+                android:layout_width="329dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/trainingProgram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Training Program"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/trainingProgramImageView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/barbell_symbol" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/membershipTermsAndConditionCardView"
+                android:layout_width="329dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/membershipTermsAndCondition"
+                    android:layout_width="221dp"
+                    android:layout_height="61dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Membership Terms and Condition"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/membershipTermsAndConditionImageView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/check" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/membershipSessionCardView"
+                android:layout_width="329dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/membershipSession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Membership Session"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/membershipSessionImageView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/membership" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/paymentCardView"
+                android:layout_width="329dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Payment"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/paymentImageView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/payment" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gymLocationCardView"
+                android:layout_width="329dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Gym Location"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/gymLocationImageView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/search" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

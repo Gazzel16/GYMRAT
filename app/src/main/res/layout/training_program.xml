@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".TrainingProgramActivity">
+
+    <!-- Header TextView remains fixed -->
+
+    <!-- ScrollView wrapping CardViews only -->
+
+    <TextView
+        android:id="@+id/trainingProgram"
+        android:layout_width="325dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Training Programs"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/trainingProgram"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <!-- Repeat for each CardView with spacing if needed -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chestWorkoutCardView"
+                android:layout_width="291dp"
+                android:layout_marginLeft="55dp"
+                android:layout_height="135dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintHorizontal_bias="0.5" >
+
+                <TextView
+                    android:id="@+id/chestWorkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:text="Chest Workout" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/backWorkoutCardView"
+                android:layout_width="291dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="55dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:id="@+id/backWorkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="19dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:text="Back Workout" />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shoulderWorkoutCardView"
+                android:layout_width="291dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="55dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/shoulderWorkout"
+                    android:layout_width="183dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Shoulder Workout"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/legsWorkoutCardView"
+                android:layout_width="291dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="55dp"
+                android:backgroundTint="@color/bright_red"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:id="@+id/legsWorkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:text="legs Workout" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tricepsWorkoutCardView"
+                android:layout_width="291dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="55dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/tricepsWorkout"
+                    android:layout_width="193dp"
+                    android:layout_height="98dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Triceps Workout"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bicepsWorkoutCardView"
+                android:layout_width="291dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="55dp"
+                android:backgroundTint="#E70909"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/bicepsWorkout"
+                    android:layout_width="173dp"
+                    android:layout_height="95dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="biceps Workout"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="10dp"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/imgdumbell" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
